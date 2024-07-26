@@ -1,1 +1,6 @@
-<navigation></navigation>
+@if(!authService.isLoggedIn){
+    <navigation></navigation>
+}
+@else {
+    <router-outlet />
+}
