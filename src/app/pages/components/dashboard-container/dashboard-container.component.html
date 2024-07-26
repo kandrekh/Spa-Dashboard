@@ -1,1 +1,5 @@
-<p>dashboard-container works!</p>
+@if(authService.isAdmin){
+    <app-admin-dashboard></app-admin-dashboard>
+} @else{
+    <app-user-dashboard></app-user-dashboard>
+}

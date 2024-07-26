@@ -1,5 +1,5 @@
-@if(!authService.isLoggedIn){
-    <navigation></navigation>
+@if(authService.isAuthenticated){
+    <navigation ></navigation>
 }
 @else {
     <router-outlet />
