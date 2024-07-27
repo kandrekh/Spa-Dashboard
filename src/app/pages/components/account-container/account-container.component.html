@@ -1,0 +1,5 @@
+@if (authService.isAdmin){
+    <app-admin-account></app-admin-account>
+} @else {
+    <app-user-account></app-user-account>
+}

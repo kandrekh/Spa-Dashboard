@@ -1,2 +1,6 @@
-<h1>Spa Dashboard</h1>
-<router-outlet />
+@if(authService.isAuthenticated){
+    <navigation ></navigation>
+}
+@else {
+    <router-outlet />
+}
