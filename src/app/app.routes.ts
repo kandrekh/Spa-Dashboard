@@ -16,6 +16,7 @@ export const routes: Routes = [
     {path:'email-confirmation', component: EmailConfirmationComponent},
     {path: 'dashboard', component:NavigationComponent,
     children:[
+        {path: '', redirectTo:'user', pathMatch:'full'},
         {path:'user', component:DashboardContainerComponent},
         {path:'account', component:AccountContainerComponent},
     ]
